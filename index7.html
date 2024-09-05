@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipito</title>
+    <link href="https://fonts.cdnfonts.com/css/arca-majora-3" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/style7.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="left-content">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <div class="title">
+                <a href="./index.html">Hardware</a>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-toggle">
+                <i class="fas fa-microchip"></i>
+            </div>
+            <nav class="menu">
+                <a href="./index2.html" class="menu-item" data-text="Introdução ao Hardware">
+                    <i class="fas fa-book"></i>
+                </a>
+                <a href="./index3.html" class="menu-item" data-text="Cursos">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="./index6.html" class="menu-item" data-text="Profissões">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+                <a href="./index4.html" class="menu-item" data-text="Entrevistas">
+                    <i class="fas fa-microphone"></i>
+                </a>
+                <a href="./index5.html" class="menu-item" data-text="Tendências">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+            </nav>
+    </header>
+    <br>
+    <button id="audio-button">
+        <img id="audio-icon" src="./img/botaoaudio.png" alt="Play Audio">
+    </button>
+    <audio id="page-audio">
+        <source src="./img/hino-cruzeiro.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <div class="container">
+        <div class="imagem">
+            <h1>Mascote <br>Chipito</h1> <br>
+            <img src="./img/mascote.jpg" alt="Imagem do Tópico 1">
+        </div>
+
+        <br><br><br>
+        <h2>Nome Escolhido</h2>
+        <p>O nome dele é Chipito, “Chip” vem de chipset, que é onde o processador é colocado na placa-mãe, e “ito” é uma
+            sonoridade de mascote.
+        </p>
+        <br>
+        <h2>Função dentro do Hardware</h2>
+        <p>Ele é um processador de computador, é uma peça de hardware responsável por executar as instruções geradas
+            pelo hardware e software.</p>
+        <br><br><br>
+
+
+        <div class="t1">
+            <div class="texto-coluna">
+                <br><br><br>
+                <h2 id="corH2">Suas Funções</h2>
+            </div>
+            <div class="topicos-coluna">
+
+                <ul class="topicos-lista">
+                    <li>Será de fácil uso;</li>
+                    <li>O mascote será animado;</li>
+                    <li>Ele trará mais alegria e interação ao site;</li>
+                    <li>Poderá se habilitado e desabilitado quando o
+                        usuário desejar.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="mascote-container" id="mascoteContainer">
+        <div class="caixa-branca">
+            <video src="./img/mascotevideo.mp4" class="mascote" id="mascote" muted></video>
+
+            <center><button class="botao-clique-aqui" id="botaoCliqueAqui" style="display: none;">
+                    Saiba Mais sobre o Chipito
+                </button></center>
+        </div>
+    </div>
+    
+    <button class="botao-mascote" id="botaoMascote">
+        <img src="./img/mascote.jpg" alt="Botão Mascote" class="imagem-botao">
+    </button>
+
+
+    <script text="javascript" src="./js/script.js"></script>
+</body>
+
+</html>
