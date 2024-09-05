@@ -69,6 +69,10 @@ nav ul li a {
     margin: 20px auto;
 }
 
+.container p {
+    text-align: justify;
+}
+
 .topic {
     display: flex;
     justify-content: space-between;
@@ -102,7 +106,7 @@ nav ul li a {
     margin: 0 0 10px 0;
 }
 
-.topic p {
+.topic p, h2, b {
     margin: 0;
     text-align: justify;
 }

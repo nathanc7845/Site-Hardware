@@ -132,5 +132,9 @@ h2 {
 }
 
 #audio-button img {
-    height: 60px; /* Ajuste o tamanho conforme necessário */
+    height: 60px;
+}
+
+.botao-mascote, .mascote{
+    display: none;
 }
