@@ -1,0 +1,152 @@
+@import url('https://fonts.cdnfonts.com/css/arca-majora-3');
+
+body {
+    margin: 0;
+    font-family: 'Arca Majora 3', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+h2 {
+    margin: 0;
+    font-size: 31.02px;
+    line-height: 1.2;
+    width: 131.23px;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(20, 22, 19);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.tela {
+    background-attachment: fixed;
+    background-image: url('../img/fundo.png');
+    background-size: cover;
+    background-position: center;
+    padding: 110px;
+    z-index: 1;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+    height: 368px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.explore-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    transition: transform 0.3s;   
+}
+
+.menu-item {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+
+
+.menu-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    
+}
+
+
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+}
+
+h3{
+   text-align: center;
+}
+
+.menu-item p {
+    margin-top: 10px;
+}
+
+.menu-item .btn-more-info {
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.menu-item .btn-more-info:hover {
+    background-color: rgb(10, 10, 10);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 97.5%;
+    height: 220px;
+    background-color: rgb(20, 22, 19);
+    padding: 20px;
+}
+footer h1{
+    text-align: center;
+}
+footer .text {
+    width: 65%;
+    text-align: left;
+    text-align: justify;
+}
+
+footer .image {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+footer .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
