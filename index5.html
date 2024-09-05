@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendências</title>
+    <link href="https://fonts.cdnfonts.com/css/arca-majora-3" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="./css/style5.css">
+    <link rel="stylesheet" href="./css/mascote.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="left-content">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <div class="title">
+                <a href="./index.html">Hardware</a>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-toggle">
+                <i class="fas fa-microchip"></i>
+            </div>
+            <nav class="menu">
+                <a href="./index2.html" class="menu-item" data-text="Introdução ao Hardware">
+                    <i class="fas fa-book"></i>
+                </a>
+                <a href="./index3.html" class="menu-item" data-text="Cursos">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="./index6.html" class="menu-item" data-text="Profissões">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+                <a href="./index4.html" class="menu-item" data-text="Entrevistas">
+                    <i class="fas fa-microphone"></i>
+                </a>
+    
+            </nav>
+    </header>
+    <br>
+    <button id="audio-button">
+        <img id="audio-icon" src="./img/botaoaudio.png" alt="Play Audio">
+    </button>
+    <audio id="page-audio">
+        <source src="./img/hino-cruzeiro.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    
+    <h1>Tendências e Futuro do Hardware</h1>
+    <br>
+    <div class="container">
+        <hr>
+        <br>
+        <div class="topic">
+            <div class="topic-content">
+                <h2>Computação Quântica</h2>
+                <p>Promete revolucionar a computação oferecendo um poder de processamento maior do
+                    que os computadores clássicos. Instituições de pesquisa estão investindo nessa área para superar os
+                    desafios técnicos e criar sistemas práticos
+                </p>
+            </div>
+            <img src="./img/quantica.jpg" alt="Imagem do Tópico 1">
+        </div>
+        <div class="topic">
+            <div class="topic-content">
+                <h2>IA e Aprendizado de Máquina Integrados em Hardware</h2>
+                <p>Espera-se que os futuros dispositivos de hardware sejam cada vez mais utilizados para incluir
+                    algoritmos e unidades de processamento especializadas para tarefas específicas de IA, como redes
+                    neurais profundas.
+                </p>
+            </div>
+            <img src="./img/IA.jpg" alt="Imagem do Tópico 2">
+        </div>
+        <div class="topic">
+            <div class="topic-content">
+                <h2>Computação Edge e Internet das Coisas (IoT)</h2>
+
+                <p>Com o crescimento da IoT, mais dispositivos precisarão de capacidade de processamento para lidar com
+                    dados em tempo real e reduzir a dependência de conexões de rede de alta largura de banda. Isso
+                    impulsionará o desenvolvimento de hardware de baixo consumo de energia e alta eficiência para
+                    computação edge. </p>
+            </div>
+            <img src="./img/edge.jpg" alt="Imagem do Tópico 3">
+        </div>
+        <div class="topic">
+            <div class="topic-content">
+                <h2>Memória Persistente e Armazenamento</h2>
+                <p>
+                    Estão sendo pesquisadas novas tecnologias de memória para oferecer armazenamento de dados mais
+                    rápido, denso e durável. Isso pode mudar a forma como os sistemas de armazenamento são projetados e
+                    utilizados.</p>
+            </div>
+            <img src="./img/persistente.jpg" alt="Imagem do Tópico 4">
+        </div>
+        <div class="topic">
+            <div class="topic-content">
+                <h2>Redes 5G e Tecnologia de Comunicação Sem Fio</h2>
+
+                <p>Espera-se uma demanda por hardware compatível com essa tecnologia de redes 5G, desde dispositivos
+                    móveis até infraestrutura de rede. Além disso, o desenvolvimento de comunicações sem fio de próxima
+                    geração, como o Wi-Fi 6, também moldará o futuro do hardware de rede.
+                </p>
+            </div>
+            <img src="./img/5g.jpg" alt="Imagem do Tópico 5">
+        </div>
+        <br>
+        <p>Essas são apenas algumas das tendências e direções que estão moldando o futuro da área de hardware. À medida
+            que
+            novas tecnologias emergem e desafios são enfrentados, é provável que surjam ainda mais inovações e mudanças
+            significativas.</p>
+        <br>
+    </div>
+    <div class="mascote-container" id="mascoteContainer">
+        <div class="caixa-branca">
+            <video src="./img/mascotevideo.mp4" class="mascote" id="mascote" muted></video>
+
+            <center><button class="botao-clique-aqui" id="botaoCliqueAqui" style="display: none;">
+                    Saiba Mais sobre o Chipito
+                </button></center>
+        </div>
+    </div>
+    <button class="botao-mascote" id="botaoMascote">
+        <img src="./img/mascote.jpg" alt="Botão Mascote" class="imagem-botao">
+    </button>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
