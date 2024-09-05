@@ -102,10 +102,12 @@ Início do site Hardware
 
 // Feito um botão escrito "Saiba mais sobre o chipito" para quando o vídeo terminar e o usuário se interessar com o mascote, ele ser mandado para uma página falando sobre o mascote
 
-// Criado o arquivo "index7.html"
+// Criado o arquivo "index7.html" que falará sobre o mascote "chipito"
 
-// Criado o arquivo "style6.css" dentro da pasta "css"
+// Criado o arquivo "style7.css" dentro da pasta "css"
 
 // Criado o arquivo "menu.css"
 
 // Adicionado o código do menu de ícones para o arquivo "menu.css"
+
+// Adicionado informações na página "index7.html"
