@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevistas</title>
+    <link href="https://fonts.cdnfonts.com/css/arca-majora-3" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href='./css/style4.css'>
+    <link rel="stylesheet" href="./css/mascote.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+<body>
+    <header>
+        <div class="left-content">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+            <div class="title">
+                <a href="./index.html">Hardware</a>
+            </div>
+        </div>
+        <div class="menu-container">
+            <div class="menu-toggle">
+                <i class="fas fa-microchip"></i>
+            </div>
+            <nav class="menu">
+                <a href="./index2.html" class="menu-item" data-text="Introdução ao Hardware">
+                    <i class="fas fa-book"></i>
+                </a>
+                <a href="./index3.html" class="menu-item" data-text="Cursos">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="./index6.html" class="menu-item" data-text="Profissões">
+                    <i class="fas fa-briefcase"></i>
+                </a>
+                <a href="./index5.html" class="menu-item" data-text="Tendências">
+                    <i class="fas fa-chart-line"></i>
+                </a>
+            </nav>
+    </header>
+    <br>
+    <button id="audio-button">
+        <img id="audio-icon" src="./img/botaoaudio.png" alt="Play Audio">
+    </button>
+    <audio id="page-audio">
+        <source src="./img/hino-cruzeiro.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <h1>Entrevistas</h1>
+    <br>
+    
+    <div class="container">
+        <p>
+            Para entender melhor sobre uma área, é importante conhecer sobre as experiências de outras pessoas nessa
+            área.
+            Sabendo disso produzimos duas entrevistas, uma com um profissional já formado na área e outra com um
+            estudante.
+            Nas
+            entrevistas procuramos esclarecer dúvidas que seriam as mais comuns entre as pessoas que buscam saber mais
+            sobre
+            esse área.
+        </p>
+    </div>
+
+    <div class="mascote-container" id="mascoteContainer">
+        <div class="caixa-branca">
+            <video src="./img/mascotevideo.mp4" class="mascote" id="mascote" muted></video>
+
+            <center><button class="botao-clique-aqui" id="botaoCliqueAqui" style="display: none;">
+                    Saiba Mais sobre o Chipito
+                </button></center>
+        </div>
+    </div>
+    <button class="botao-mascote" id="botaoMascote">
+        <img src="./img/mascote.jpg" alt="Botão Mascote" class="imagem-botao">
+    </button>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
