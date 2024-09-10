@@ -5,13 +5,14 @@ document.getElementById('botaoMascote').addEventListener('click', function () {
 
     if (mascoteContainer.style.display === 'none' || mascoteContainer.style.display === '') {
         mascoteContainer.style.display = 'block';
+        mascoteVideo.style.width = ''; 
         mascoteVideo.play();
     } else {
         mascoteContainer.style.display = 'none';
         mascoteVideo.pause();
         mascoteVideo.currentTime = 0;
         botaoCliqueAqui.style.display = 'none';
-        mascoteVideo.style.width = '150px';
+        mascoteVideo.style.width = ''; 
     }
 });
 
@@ -30,30 +31,40 @@ document.getElementById('botaoCliqueAqui').addEventListener('click', function ()
 
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const menu = document.querySelector('.menu');
     const menuItems = document.querySelectorAll('.menu-item');
 
-    menuToggle.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        menuToggle.classList.toggle('active');
 
-        if (menu.classList.contains('active')) {
+    const openSound = new Audio('./audios/abrir.mp3');
+    const closeSound = new Audio('./audios/fechar.mp3');
+    openSound.volume = 0.1;
+    closeSound.volume = 0.1;
+
+    menuToggle.addEventListener('click', () => {
+        const isMenuOpen = menu.classList.contains('active');
+
+        if (isMenuOpen) {
+            closeSound.play();
+            menu.classList.remove('active');
+            menuToggle.classList.remove('active');
+            menuItems.forEach((item) => {
+                item.classList.remove('show');
+            });
+        } else {
+            openSound.play();
+            menu.classList.add('active');
+            menuToggle.classList.add('active');
             menuItems.forEach((item, index) => {
                 setTimeout(() => {
                     item.style.transitionDelay = `${index * 0.1}s`;
                     item.classList.add('show');
                 }, index * 100);
             });
-        } else {
-            menuItems.forEach((item, index) => {
-                item.style.transitionDelay = `${(menuItems.length - index - 1) * 0.1}s`;
-                item.classList.remove('show');
-            });
         }
     });
-
 
     menuItems.forEach(item => {
         const tooltip = document.createElement('div');
@@ -75,19 +86,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
     document.addEventListener('click', (event) => {
         if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-            menu.classList.remove('active');
-            menuToggle.classList.remove('active');
-            menuItems.forEach((item) => {
-                item.classList.remove('show');
-            });
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                menuToggle.classList.remove('active');
+                menuItems.forEach((item) => {
+                    item.classList.remove('show');
+                });
+            }
         }
     });
 });
-
-document.getElementById('audio-button').addEventListener('click', function() {
+document.getElementById('audio-button').addEventListener('click', function () {
     var audio = document.getElementById('page-audio');
     var audioIcon = document.getElementById('audio-icon');
 
@@ -96,6 +107,48 @@ document.getElementById('audio-button').addEventListener('click', function() {
         audioIcon.src = './img/botaoaudio.png';
     } else {
         audio.pause();
-        audioIcon.src = './img/botaoaudiomutado.png'; 
+        audioIcon.src = './img/botaoaudiomutado.png';
     }
 });
+
+const audioMascote = document.getElementById("audioMascote");
+
+audioMascote.playbackRate = 0.90;
+botaoMascote.addEventListener("click", function() {
+    if (audioMascote.paused) {
+       
+        audioMascote.currentTime = 0;
+        audioMascote.play().catch(function(error) {
+            console.log("Erro ao reproduzir o áudio:", error);
+        });
+    } else {
+        
+        audioMascote.pause();
+    }
+});
+const menuItems = document.querySelectorAll('.menu-item');
+
+
+function applyGlowEffect() {
+    menuItems.forEach(item => {
+        if (item !== this) { 
+            item.classList.add('escurecer');
+        } else {
+            item.classList.add('brilho');
+        }
+    });
+}
+
+
+function removeGlowEffect() {
+    menuItems.forEach(item => {
+        item.classList.remove('escurecer', 'brilho');
+    });
+}
+
+
+menuItems.forEach(item => {
+    item.addEventListener('mouseover', applyGlowEffect);
+    item.addEventListener('mouseout', removeGlowEffect);
+});
+
