@@ -3,7 +3,10 @@
 body {
     margin: 0;
     font-family: 'Arca Majora 3', sans-serif;
-    background-color: black;
+
+    background-image: url("../img/Design\ sem\ nome.png");
+    background-size: 100%;
+
     color: white;
 }
 
@@ -14,6 +17,7 @@ h2 {
     line-height: 1.2;
     width: 131.23px;
 }
+
 header {
     display: flex;
     align-items: center;
@@ -66,22 +70,29 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
-    transition: transform 0.3s;   
+    transition: transform 0.3s;
 }
 
 .menu-item {
     flex-basis: 30%;
     margin-bottom: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, opacity 2s, filter 1.5s;
     padding: 10px;
     box-sizing: border-box;
-    
+
 }
 
+.menu-item.escurecer {
+    opacity: 0.2;
+}
+
+.menu-item.brilho {
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+    z-index: 1;
+}
 
 .menu-item:hover {
     transform: translateY(-5px) scale(1.05);
-    
 }
 
 
@@ -97,8 +108,8 @@ header {
     margin-top: 10px;
 }
 
-h3{
-   text-align: center;
+h3 {
+    text-align: center;
 }
 
 .menu-item p {
@@ -117,7 +128,7 @@ h3{
 }
 
 .menu-item .btn-more-info:hover {
-    background-color: rgb(10, 10, 10);
+    background-color: transparent;
 }
 
 footer {
@@ -128,9 +139,11 @@ footer {
     background-color: rgb(20, 22, 19);
     padding: 20px;
 }
-footer h1{
+
+footer h1 {
     text-align: center;
 }
+
 footer .text {
     width: 65%;
     text-align: left;
@@ -142,7 +155,7 @@ footer .image {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    
+
 }
 
 footer .image img {

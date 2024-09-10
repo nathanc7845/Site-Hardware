@@ -86,14 +86,15 @@
     }
 }
 
+
 #audio-button {
     background: none;
     border: none;
     cursor: pointer;
     outline: none;
-    position: fixed;
+    position: absolute;
 }
 
 #audio-button img {
-    height: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px;
 }

@@ -108,6 +108,17 @@ nav ul li a {
     text-align: justify;
 }
 
-h1, h2{
-    color: #CB6CE6;
+h1,
+h2 {
+    color: #cd86e0;
+    text-align: center;
+}
+
+
+b {
+    color: #c062da;
+}
+
+#titulo {
+    font-size: 40px;
 }

@@ -26,24 +26,6 @@ header {
     height: 30px;
 }
 
-nav ul {
-
-    font-weight: bold;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 20px;
-}
 
 .title {
 
@@ -100,6 +82,20 @@ nav ul li a {
     text-align: justify;
 }
 
-h1, h2, h3, b {
-    color: #CB6CE6;
+h1,
+h2 {
+    color: #cd86e0;
+    text-align: center;
+}
+
+h3 {
+    color: #ab5deb;
+}
+
+b {
+    color: #c062da;
+}
+
+#titulo {
+    font-size: 40px;
 }

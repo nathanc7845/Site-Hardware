@@ -107,6 +107,21 @@ nav ul li a {
     text-align: justify;
 }
 
-h1, h2, h3, b{
-    color: #CB6CE6;
+h1, h2 {
+    color: #cd86e0;
+    text-align: center;
+}
+
+
+
+h3 {
+    color: #ab5deb;
+}
+
+b {
+    color: #c062da;
+}
+
+#titulo{
+    font-size: 40px;
 }

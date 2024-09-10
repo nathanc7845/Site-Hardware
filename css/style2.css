@@ -3,7 +3,6 @@
 body {
     margin: 0;
     font-family: 'Arca Majora 3', sans-serif;
-    background-color: black;
     color: white;
 }
 
@@ -73,10 +72,14 @@ nav ul li a {
     text-align: justify;
 }
 
+#semborda {
+    border: solid 1px transparent;
+}
+
 .topic {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
@@ -106,16 +109,29 @@ nav ul li a {
     margin: 0 0 10px 0;
 }
 
-.topic p, h2, b {
+.topic p,
+h2,
+b {
     margin: 0;
     text-align: justify;
 }
 
 h1,
-h2,
-h3,
+h2 {
+    color: #cd86e0;
+    text-align: center;
+}
+
+h3 {
+    color: #ab5deb;
+}
+
 b {
-    color: #CB6CE6;
+    color: #c062da;
+}
+
+#titulo {
+    font-size: 40px;
 }
 
 .mascote-container {
@@ -166,4 +182,9 @@ b {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+video {
+    border: solid 1px white;
+    border-radius: 7px;
 }
